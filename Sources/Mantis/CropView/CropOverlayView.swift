@@ -87,7 +87,7 @@ class CropOverlayView: UIView {
         }
         
         layoutOuterLines()
-        layoutCornerLines()
+//        layoutCornerLines()
         layoutGridLines()
         setGridShowStatus()
     }
