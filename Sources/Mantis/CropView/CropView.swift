@@ -421,7 +421,7 @@ extension CropView {
     func getContentBounds() -> CGRect {
         let cropViewPadding = cropViewConfig.padding
 
-        let rect = self.bounds
+        let rect = UIScreen.main.bounds///self.bounds
         var contentRect = CGRect.zero
         
         if Orientation.isPortrait {
