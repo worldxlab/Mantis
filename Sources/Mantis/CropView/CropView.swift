@@ -278,27 +278,27 @@ class CropView: UIView {
             rotationDial?.removeFromSuperview()
         }
 
-        let boardLength = min(bounds.width, bounds.height) * 0.6
-        let rotationDial = RotationDial(frame: CGRect(x: 0,
-                                                      y: 0,
-                                                      width: boardLength,
-                                                      height: angleDashboardHeight),
-                                        dialConfig: cropViewConfig.dialConfig)
-        self.rotationDial = rotationDial
-        rotationDial.isUserInteractionEnabled = true
-        addSubview(rotationDial)
-        
-        rotationDial.setRotationCenter(by: gridOverlayView.center, of: self)
-        
-        rotationDial.didRotate = { [unowned self] angle in
-            self.viewModel.setRotatingStatus(by: angle)
-        }
-        
-        rotationDial.didFinishedRotate = { [unowned self] in
-            self.viewModel.setBetweenOperationStatus()
-        }
-        
-        rotationDial.rotateDialPlate(by: CGAngle(radians: viewModel.radians))
+//        let boardLength = min(bounds.width, bounds.height) * 0.6
+//        let rotationDial = RotationDial(frame: CGRect(x: 0,
+//                                                      y: 0,
+//                                                      width: boardLength,
+//                                                      height: angleDashboardHeight),
+//                                        dialConfig: cropViewConfig.dialConfig)
+//        self.rotationDial = rotationDial
+//        rotationDial.isUserInteractionEnabled = true
+//        addSubview(rotationDial)
+//        
+//        rotationDial.setRotationCenter(by: gridOverlayView.center, of: self)
+//        
+//        rotationDial.didRotate = { [unowned self] angle in
+//            self.viewModel.setRotatingStatus(by: angle)
+//        }
+//        
+//        rotationDial.didFinishedRotate = { [unowned self] in
+//            self.viewModel.setBetweenOperationStatus()
+//        }
+//        
+//        rotationDial.rotateDialPlate(by: CGAngle(radians: viewModel.radians))
         adaptAngleDashboardToCropBox()
     }
     
