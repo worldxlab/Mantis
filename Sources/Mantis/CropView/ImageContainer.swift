@@ -14,7 +14,7 @@ class ImageContainer: UIView {
         let imageView = UIImageView(frame: bounds)
         imageView.layer.minificationFilter = .trilinear
         imageView.accessibilityIgnoresInvertColors = true
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         
         addSubview(imageView)
         
