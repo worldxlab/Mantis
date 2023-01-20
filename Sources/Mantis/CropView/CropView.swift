@@ -32,7 +32,7 @@ protocol CropViewDelegate: AnyObject {
 }
 
 class CropView: UIView {
-    private let angleDashboardHeight: CGFloat = 60
+    private let angleDashboardHeight: CGFloat = 0
     
     var image: UIImage {
         didSet {
@@ -421,7 +421,7 @@ extension CropView {
     func getContentBounds() -> CGRect {
         let cropViewPadding = cropViewConfig.padding
 
-        let rect = UIScreen.main.bounds///self.bounds
+        let rect = self.bounds///UIScreen.main.bounds
         var contentRect = CGRect.zero
         
         if Orientation.isPortrait {

@@ -20,8 +20,8 @@ class CropScrollView: UIScrollView {
     
     init(frame: CGRect, minimumZoomScale: CGFloat = 1.0, maximumZoomScale: CGFloat = 15.0) {
         super.init(frame: frame)
-        alwaysBounceHorizontal = true
-        alwaysBounceVertical = true
+        alwaysBounceHorizontal = false
+        alwaysBounceVertical = false
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
         contentInsetAdjustmentBehavior = .never

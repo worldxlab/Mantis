@@ -4,15 +4,15 @@ public struct CropViewConfig {
     /**
         This value is for how easy to drag crop box. The bigger, the easier.
      */
-    public var cropBoxHotAreaUnit: CGFloat = 32
+    public var cropBoxHotAreaUnit: CGFloat = 0
     
     public var cropShapeType: CropShapeType = .rect
     
-    public var cropBorderWidth: CGFloat = 0
+    public var cropBorderWidth: CGFloat = 1
     
-    public var cropBorderColor: UIColor = .clear
+    public var cropBorderColor: UIColor = .white
     
-    public var cropMaskVisualEffectType: CropMaskVisualEffectType = .blurDark
+    public var cropMaskVisualEffectType: CropMaskVisualEffectType = .light
     
     public var presetTransformationType: PresetTransformationType = .none
     
@@ -29,7 +29,7 @@ public struct CropViewConfig {
     
     public var showRotationDial = true
     
-    public var padding: CGFloat = 14
+    public var padding: CGFloat = 0
     
     var minimumCropBoxSize: CGFloat = 42
 
